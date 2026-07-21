@@ -1,4 +1,4 @@
-
+##### LIST
 # 1: Sum of List
 numbers = [10, 20, 30, 40, 50]
 
@@ -102,5 +102,53 @@ count = 10
 while count > 0:
     print(count)
     count -= 1
-print("Finished!")     
+print("Finished!")
 
+
+#### FUNCTIONS
+
+# 12: function that checks if a number is prime
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+ 
+print(is_prime(17))   # True
+print(is_prime(15))   # False
+
+
+# 13: function that returns the factorial of a number
+def factorial(n):
+    result = 1
+    for i in range(1, n+1):
+        result = result * i
+    return result
+
+print(factorial(5))  # 120
+
+
+
+# 14: function that returns the maximum of two numbers
+def maximum(a, b):
+    if a > b:
+        return a
+    return b
+
+print(maximum(10, 25))
+
+
+# 15: function that greets a person
+def greet(name):
+    print("Hello", name)
+
+greet("Bibek")
+
+
+# 16: function that calculates the square of a number
+def square(n):
+    return n * n
+
+print(square(6))
