@@ -152,3 +152,27 @@ def square(n):
     return n * n
 
 print(square(6))
+
+
+### FILE I/O
+
+# 18: Write a  list of fruits to a text file, one per line
+fruits = ["Apple", "Banana", "Cherry", "Date", "Mango"]
+with open ("fruits.txt", "w") as f:
+    for fruits in fruits:
+        f.write(fruits + "\n")
+
+
+
+# 19: Read the contents of the text file and print them
+with open("fruits.txt", "r") as f:
+    contents = f.read()
+    print(contents)
+
+
+
+# 20: Count the number of lines in a text file
+with open("fruits.txt", "r") as f:
+    lines = f.readlines()
+print("Number of lines:", len(lines))
+
